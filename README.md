@@ -1,55 +1,39 @@
-# Enterprise Infrastructure Orchestrator v1.3.4 — Public submission kit
+# Enterprise Infra Orchestrator — Infrastructure Engineering Toolkit
 
-This repository is prepared for the **OpenAI public Plugin Directory submission route** for a **skills-only plugin**.
+A small set of reusable Markdown engineering assets for reviewable infrastructure assessments, changes and handoffs. Each is optional and independently usable. No installation or build is needed.
 
-## Why this route
+**Published 10 September 2026.** A01, A02 and A03 each have independent revision 1.0. Accountable maintainer: Doron Shamo.
 
-A personal Plus account cannot use the managed-workspace GitHub marketplace import path as a private web-distribution shortcut. Public publication is the route that can make this plugin installable from the universal Plugins Directory and therefore invokable with `@` on supported ChatGPT web surfaces after approval and installation.
+## Choose what you need
 
-## Repository contents
+| Need | Use |
+|---|---|
+| A simple question, definition or explanation | Native ChatGPT; no asset |
+| A scoped supportability or compatibility decision | [A01 — Supportability Assessment](toolkit/SUPPORTABILITY_ASSESSMENT.md) |
+| Consequential change or acceptance planning | [A02 — Change & Acceptance Worksheet](toolkit/CHANGE_ACCEPTANCE_WORKSHEET.md) |
+| Continue work across time, people or changed evidence | [A03 — Evidence & Decision Handoff](toolkit/EVIDENCE_DECISION_HANDOFF.md); optional |
 
-- `.codex-plugin/plugin.json` — publication-oriented plugin manifest.
-- `skills/enterprise-infrastructure-orchestrator/` — the final v1.3.4 Skill bundle.
-- `assets/` — publication icons.
-- `docs/` — GitHub Pages-ready website, privacy policy, terms, and support pages.
-- `submission/` — copy/paste listing text, starter prompts, 5 positive tests, 3 negative tests, and release notes.
-- `configure-publisher.ps1` — replaces publisher placeholders with your GitHub username and verified publisher name.
-- `validate-submission.ps1` — local structural/preflight validation.
-- `build-zips.ps1` — creates final plugin and skill ZIPs after publisher configuration.
+If an existing ticket or document already preserves sufficient context, omit A03. You never need to use all three assets.
 
-## Prepare the repository
+## How to use
 
-1. Run:
-   `powershell -ExecutionPolicy Bypass -File .\configure-publisher.ps1 -GitHubUsername "YOUR_USERNAME" -PublisherName "YOUR VERIFIED NAME"`
-2. Create a GitHub repository named `enterprise-infrastructure-orchestrator` and upload/push this folder.
-3. Enable GitHub Pages from the `/docs` folder on your default branch.
-4. Confirm these URLs load publicly:
-   - `/`
-   - `/privacy.html`
-   - `/terms.html`
-   - `/support.html`
-5. Run:
-   `powershell -ExecutionPolicy Bypass -File .\validate-submission.ps1`
-6. Run:
-   `powershell -ExecutionPolicy Bypass -File .\build-zips.ps1`
+1. Open or attach the relevant asset.
+2. Provide the task and permitted, sanitized evidence.
+3. Ask ChatGPT to produce the requested engineering artifact using it.
+4. Review the output before operational use.
 
-## Submit to OpenAI
+## Important boundaries
 
-In the OpenAI Platform plugin submission portal:
+These assets are advisory. They execute no infrastructure changes, provide no automatic compatibility certification and manage no persistent project state. A procedure or planned acceptance criterion is not execution authority or an observed result. Missing evidence may remain unknown; review consequential assumptions and recovery dependencies.
 
-1. Ensure the publishing organization gives you **Apps Management: Write** permission.
-2. Complete individual or business developer identity verification.
-3. Create a new **Skills only** plugin submission.
-4. Use `submission/listing-and-urls.md` for listing fields.
-5. Upload `dist/enterprise-infrastructure-orchestrator-skill-v1.3.4.zip` on the Skills tab.
-6. Add the starter prompts from `submission/starter-prompts.md`.
-7. Add the five positive and three negative tests from `submission/test-cases.md`.
-8. Choose supported countries/regions.
-9. Paste `submission/release-notes.md` into the release notes field.
-10. Complete the policy attestations and submit for review.
+Use only permitted, sanitized evidence. Restricted-network snapshots retain their capture date and scope limitations and require approved transfer for connected analysis. The toolkit provides no offline ChatGPT inference.
 
-After OpenAI approves the submission, publish it from the portal. Once published, it appears in the universal Plugins Directory. Install it in ChatGPT web, then invoke it with `@Enterprise Infrastructure Orchestrator` where the `@` plugin control is supported.
+## Legacy Plugin
 
-## Important
+The published v1.3.4 Plugin remains separate under limited maintenance, with no current forced retirement date. Toolkit use requires no Plugin installation and causes no automatic migration. See the [legacy coexistence note](docs/LEGACY_PLUGIN_AND_TOOLKIT.md).
 
-The policy/terms pages are publication-ready drafts but are not legal advice. Review them before publishing under your identity.
+## Maintenance and revisions
+
+Assets evolve independently. Maintenance covers revision/index accuracy, broken links, consequential clarity or safety defects and material contract changes. Changed fields, semantics or evidence requirements need a concise migration note. Assets may be archived or deprecated when no longer useful or responsibly maintainable.
+
+Vendor/version facts belong in task evidence. Maintenance promises no live compatibility catalog, automatic verification or synchronization, monitoring, response SLA, perpetual support or compatibility with every future model.
