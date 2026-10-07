@@ -11,7 +11,7 @@ A small set of reusable Markdown engineering assets for reviewable infrastructur
 | A simple question, definition or explanation | Native ChatGPT; no asset |
 | A scoped supportability or compatibility decision | [A01 — Supportability Assessment](toolkit/SUPPORTABILITY_ASSESSMENT.md) |
 | Consequential change or acceptance planning | [A02 — Change & Acceptance Worksheet](toolkit/CHANGE_ACCEPTANCE_WORKSHEET.md) |
-| Continue work across time, people or changed evidence | [A03 — Evidence & Decision Handoff](toolkit/EVIDENCE_DECISION_HANDOFF.md); optional |
+| Continue work across time, people or changed evidence | [A03 — Evidence & Decision Handoff](toolkit/EVIDENCE_DECISION_HANDOFF.md) |
 
 If an existing ticket or document already preserves sufficient context, omit A03. You never need to use all three assets.
 
