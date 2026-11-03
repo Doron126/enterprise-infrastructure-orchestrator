@@ -2,7 +2,7 @@
 
 A small set of reusable Markdown engineering assets for reviewable infrastructure assessments, changes and handoffs. Each is optional and independently usable. No installation or build is needed.
 
-**Published 10 September 2026.** A01, A02 and A03 each have independent revision 1.0. Accountable maintainer: Doron Shamo.
+**Published 10 September 2026.** A01 and A02 are revision 1.0; A03 is revision 1.1. Assets have independent revisions. Accountable maintainer: Doron Shamo.
 
 ## Choose what you need
 
@@ -13,7 +13,7 @@ A small set of reusable Markdown engineering assets for reviewable infrastructur
 | Consequential change or acceptance planning | [A02 — Change & Acceptance Worksheet](toolkit/CHANGE_ACCEPTANCE_WORKSHEET.md) |
 | Continue work across time, people or changed evidence | [A03 — Evidence & Decision Handoff](toolkit/EVIDENCE_DECISION_HANDOFF.md) |
 
-If an existing ticket or document already preserves sufficient context, omit A03. You never need to use all three assets.
+A03 also supports moving a project between ChatGPT conversations; see the [conversation migration guide](docs/CHATGPT_CONVERSATION_HANDOFF.md). If an existing ticket or document already preserves sufficient context, omit A03. You never need to use all three assets.
 
 ## How to use
 
